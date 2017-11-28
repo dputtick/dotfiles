@@ -1,0 +1,77 @@
+# This is Git's per-user configuration file.
+# Please adapt and uncomment the following lines:
+[core]
+	editor = subl -w
+	excludesfile = ~/.gitignore_global
+[user]
+	# In ~/.gitconfig_local
+[include]
+	path = ~/.gitconfig_local
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[credential]
+	helper = osxkeychain
+[alias]
+	# Staging
+	st = status
+	s  = status -s
+
+	# Viewing history
+	gr = log --graph --full-history --all --color --pretty=tformat:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s%x20%x1b[33m(%an)%x1b[0m"
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+	ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+# 	lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
+
+	# Committing
+	aac = !git add -A && git commit -v
+	auc = !git add -u && git commit -v
+	cv = commit -v
+
+	# Branching
+	co = checkout
+	cob = checkout -b
+
+
+#	coo = !git fetch && git checkout
+#	br = branch
+#	brd = branch -d
+#	brD = branch -D
+#	merged = branch --merged
+#	dmerged = "git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+#	aa = add -A .
+#	cm = commit -m
+#	aacm = !git add -A . && git commit -m
+#	cp = cherry-pick
+#	amend = commit --amend -m
+#	dev = !git checkout dev && git pull origin dev
+#	staging = !git checkout staging && git pull origin staging
+#	master = !git checkout master && git pull origin
+#	po = push origin
+#	pod = push origin dev
+#	pos = push origin staging
+#	pom = push origin master
+#	poh = push origin HEAD
+#	pogm = !git push origin gh-pages && git checkout master && git pull origin master && git rebase gh-pages && git push origin master && git checkout gh-pages
+#	pomg = !git push origin master && git checkout gh-pages && git pull origin gh-pages && git rebase master && git push origin gh-pages && git checkout master
+#	plo = pull origin
+#	plod = pull origin dev
+#	plos = pull origin staging
+#	plom = pull origin master
+#	ploh = pull origin HEAD
+#	unstage = reset --soft HEAD^
+#	f = "!git ls-files | grep -i"
+#	gr = grep -Ii
+#	la = "!git config -l | grep alias | cut -c 7-"
+#	fl = log -u
+#	dl = "!git ll -1"
+#	dlf = diff --cached HEAD^
+#	ci = commit
+#	ca = commit -a
+#	co = checkout
+#	cl = clone
+#	aa = add -A
+#	ap = "!git add -p && git commit"
