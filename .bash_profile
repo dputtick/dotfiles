@@ -71,4 +71,4 @@ if [ -n "$PATH" ]; then
 fi
 
 # Manage dotfiles: https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
-alias dotconfig='git --git-dir=$HOME/dev/dotfiles --work-tree=$HOME'
+alias dotconfig='git --git-dir=$HOME/dotfiles --work-tree=$HOME'
