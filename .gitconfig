@@ -13,6 +13,8 @@
 	required = true
 [credential]
 	helper = osxkeychain
+[color]
+	ui = auto
 [alias]
 	# Staging
 	st = status
@@ -34,15 +36,14 @@
 	# Branching
 	co = checkout
 	cob = checkout -b
+	br = branch
 
 
 #	coo = !git fetch && git checkout
-#	br = branch
 #	brd = branch -d
 #	brD = branch -D
 #	merged = branch --merged
 #	dmerged = "git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
-#	aa = add -A .
 #	cm = commit -m
 #	aacm = !git add -A . && git commit -m
 #	cp = cherry-pick
