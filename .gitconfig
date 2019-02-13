@@ -3,6 +3,7 @@
 [core]
 	editor = subl -w
 	excludesfile = ~/.gitignore_global
+	hooksPath = /Users/danielputtick/.nvm/versions/node/v8.12.0/lib/node_modules/@mapbox/secret-shield/config/hooks
 [user]
 	# In ~/.gitconfig_local
 [include]
@@ -19,6 +20,7 @@
 	# Staging
 	st = status
 	s  = status -s
+	unstage = reset --soft HEAD^
 
 	# Viewing history
 	gr = log --graph --full-history --all --color --pretty=tformat:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s%x20%x1b[33m(%an)%x1b[0m"
@@ -26,31 +28,40 @@
 	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
 	ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-# 	lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
+ 	lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
 
 	# Committing
+	aa = !git add -A
 	aac = !git add -A && git commit -v
+	au = !git add -u
 	auc = !git add -u && git commit -v
-	cv = commit -v
+	c = commit -v
+	amend = commit -v --amend
+	ap = !git add -p
 
-	# Branching
+	# Branches
 	co = checkout
 	cob = checkout -b
 	br = branch
+	brd = branch -d
 
+	# Fetching
+	fp = fetch -p
+	coo = !git fetch && git checkout
+	master = !git checkout master && git pull origin
 
-#	coo = !git fetch && git checkout
-#	brd = branch -d
-#	brD = branch -D
+	# Diff
+	ds = diff --stat
+
+	# Tags
+	mvt = tag -fa
+
 #	merged = branch --merged
 #	dmerged = "git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
-#	cm = commit -m
 #	aacm = !git add -A . && git commit -m
 #	cp = cherry-pick
-#	amend = commit --amend -m
 #	dev = !git checkout dev && git pull origin dev
 #	staging = !git checkout staging && git pull origin staging
-#	master = !git checkout master && git pull origin
 #	po = push origin
 #	pod = push origin dev
 #	pos = push origin staging
@@ -63,16 +74,12 @@
 #	plos = pull origin staging
 #	plom = pull origin master
 #	ploh = pull origin HEAD
-#	unstage = reset --soft HEAD^
 #	f = "!git ls-files | grep -i"
 #	gr = grep -Ii
 #	la = "!git config -l | grep alias | cut -c 7-"
 #	fl = log -u
 #	dl = "!git ll -1"
 #	dlf = diff --cached HEAD^
-#	ci = commit
-#	ca = commit -a
-#	co = checkout
-#	cl = clone
-#	aa = add -A
-#	ap = "!git add -p && git commit"
+[merge "npm-merge-driver"]
+	name = automatically merge npm lockfiles
+	driver = npx npm-merge-driver merge %A %O %B %P

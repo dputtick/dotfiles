@@ -43,3 +43,7 @@ Thumbs.db
 .python-version
 *.org
 node_modules/
+
+# Coverage #
+############
+.nyc_output/
