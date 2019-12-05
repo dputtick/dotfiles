@@ -16,6 +16,11 @@
 	helper = osxkeychain
 [color]
 	ui = auto
+[merge "npm-merge-driver"]
+	name = automatically merge npm lockfiles
+	driver = npx npm-merge-driver merge %A %O %B %P
+[rerere]
+	enabled = true
 [alias]
 	# Staging
 	st = status
@@ -43,7 +48,9 @@
 	co = checkout
 	cob = checkout -b
 	br = branch
-	brd = branch -d
+	brd = branch -D
+	conflicts = merge --no-commit --no-ff
+	rh = reset --hard
 
 	# Fetching
 	fp = fetch -p
@@ -80,6 +87,3 @@
 #	fl = log -u
 #	dl = "!git ll -1"
 #	dlf = diff --cached HEAD^
-[merge "npm-merge-driver"]
-	name = automatically merge npm lockfiles
-	driver = npx npm-merge-driver merge %A %O %B %P

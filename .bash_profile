@@ -1,12 +1,12 @@
 ## EXECUTABLES
 
 # pyenv + rvenb
+eval "$(pyenv init -)"
 # if [[ -z $TMUX ]]; then
-# eval "$(pyenv init -)"
-# eval "$(pyenv virtualenv-init -)"
-# export PYENV_VIRTUALENV_VERBOSE_ACTIVATE=0
-# export VIRTUAL_ENV_DISABLE_PROMPT=1
-# eval "$(rbenv init -)"
+  # eval "$(pyenv virtualenv-init -)"
+  # export PYENV_VIRTUALENV_VERBOSE_ACTIVATE=0
+  # export VIRTUAL_ENV_DISABLE_PROMPT=1
+  # eval "$(rbenv init -)"
 # fi
 
 # n
