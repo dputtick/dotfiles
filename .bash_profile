@@ -1,20 +1,31 @@
 ## EXECUTABLES
 
 # pyenv + rvenb
-# if [[ -z $TMUX ]]; then
 eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-export PYENV_VIRTUALENV_VERBOSE_ACTIVATE=0
-export VIRTUAL_ENV_DISABLE_PROMPT=1
-eval "$(rbenv init -)"
+# if [[ -z $TMUX ]]; then
+  # eval "$(pyenv virtualenv-init -)"
+  # export PYENV_VIRTUALENV_VERBOSE_ACTIVATE=0
+  # export VIRTUAL_ENV_DISABLE_PROMPT=1
+  # eval "$(rbenv init -)"
 # fi
 
-export N_PREFIX="$HOME/.n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
+# n
+# export N_PREFIX="$HOME/.n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
 
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# nvm use default
 
+# rust
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# go
+export GOPATH="$HOME/go-dev"
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
 
 ## COLORS
 
@@ -51,6 +62,14 @@ fi
 
 alias wat='python -m pdb -c continue'
 alias fuck='sudo $(history -p !!)'
+alias npmls='npm list --depth=0'
+alias npmlsg='npm list -g --depth=0'
+# Manage dotfiles: https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
+alias dotconfig='git --git-dir=$HOME/dev/dotfiles.git --work-tree=$HOME'
+
+
+## MAPBOX
+source "$(npm root -g)/@mapbox/mbxcli/bin/mapbox.sh"
 
 
 ## OTHER
@@ -69,6 +88,3 @@ if [ -n "$PATH" ]; then
   PATH=${PATH#:}
   unset old_PATH x
 fi
-
-# Manage dotfiles: https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
-alias dotconfig='git --git-dir=$HOME/dev/dotfiles --work-tree=$HOME'
