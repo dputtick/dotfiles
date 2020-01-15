@@ -16,7 +16,6 @@ eval "$(pyenv init -)"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-# nvm use default
 
 # rust
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -29,7 +28,7 @@ export PATH=$PATH:$GOROOT/bin
 
 ## COLORS
 
-# custom shell prompt
+# custom shell prompts
 # export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h \[\033[m\]\$ " # djp@host $
 export PS1="\[\033[36m\]\u\[\033[m\]:\[\033[32m\](\W) \[\033[m\]\$ "
 # export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33m\]\W\[\033[m\]\$ " # djp@host:basename $
