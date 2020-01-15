@@ -64,11 +64,7 @@ alias fuck='sudo $(history -p !!)'
 alias npmls='npm list --depth=0'
 alias npmlsg='npm list -g --depth=0'
 # Manage dotfiles: https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
-alias dotconfig='git --git-dir=$HOME/dev/dotfiles.git --work-tree=$HOME'
-
-
-## MAPBOX
-source "$(npm root -g)/@mapbox/mbxcli/bin/mapbox.sh"
+alias dotconfig='git --git-dir=$HOME/dev/dotfiles --work-tree=$HOME'
 
 
 ## OTHER
