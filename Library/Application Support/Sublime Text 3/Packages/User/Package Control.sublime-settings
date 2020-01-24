@@ -1,0 +1,33 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"ANSIescape",
+		"ApplySyntax",
+		"Babel",
+		"BracketHighlighter",
+		"Color Scheme - Chromodynamics",
+		"Fix Mac Path",
+		"GitGutter",
+		"HTML-CSS-JS Prettify",
+		"MagicPython",
+		"Package Control",
+		"PostgreSQL Syntax Highlighting",
+		"Rust Enhanced",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-eslint",
+		"SublimeLinter-flake8",
+		"TabNine",
+		"Terminus",
+		"tern_for_sublime",
+		"Theme - Flatland",
+		"Theme - Soda",
+		"Theme - SoDaReloaded",
+		"TypeScript",
+		"Vintageous"
+	]
+}
