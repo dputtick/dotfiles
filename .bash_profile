@@ -1,7 +1,9 @@
 ## EXECUTABLES
 
-# pyenv + rvenb
+# pyenv
 eval "$(pyenv init -)"
+
+# Old pyenv stuff, bug got fixed?
 # if [[ -z $TMUX ]]; then
   # eval "$(pyenv virtualenv-init -)"
   # export PYENV_VIRTUALENV_VERBOSE_ACTIVATE=0
@@ -9,8 +11,14 @@ eval "$(pyenv init -)"
   # eval "$(rbenv init -)"
 # fi
 
-# n
-# export N_PREFIX="$HOME/.n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
+# poetry (https://python-poetry.org/)
+export PATH="$HOME/.poetry/bin:$PATH"
+
+# rbenv
+# eval "$(rbenv init -)"
+
+# n (http://git.io/n-install-repo)
+# export N_PREFIX="$HOME/.n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"

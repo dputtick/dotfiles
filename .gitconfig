@@ -3,7 +3,6 @@
 [core]
 	editor = subl -w
 	excludesfile = ~/.gitignore_global
-	hooksPath = /Users/danielputtick/.nvm/versions/node/v8.12.0/lib/node_modules/@mapbox/secret-shield/config/hooks
 [user]
 	# In ~/.gitconfig_local
 [include]
