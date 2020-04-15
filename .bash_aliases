@@ -1,0 +1,7 @@
+alias lsa='ls -GFhAl'
+alias l='ls -CF'
+alias wat='python -m pdb -c continue'
+alias fuck='sudo $(history -p !!)'
+alias npmls='npm list --depth=0'
+alias npmlsg='npm list -g --depth=0'
+alias dotconfig='git --git-dir=$HOME/dev/dotfiles --work-tree=$HOME'
