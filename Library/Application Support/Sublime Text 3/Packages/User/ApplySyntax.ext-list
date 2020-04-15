@@ -1,0 +1,48 @@
+{
+	"Bash":
+	[
+		"bash",
+		"sh",
+		"zsh"
+	],
+	"HTML (Rails)":
+	[
+		"html.erb"
+	],
+	"MagicPython":
+	[
+		"py3",
+		"pyw"
+	],
+	"Ruby":
+	[
+		"jbuilder",
+		"podspec",
+		"rabl",
+		"rake",
+		"rb",
+		"simplecov",
+		"thor"
+	],
+	"Ruby Haml":
+	[
+		"haml"
+	],
+	"Shell-Unix-Generic":
+	[
+		"bash",
+		"sh",
+		"zsh"
+	],
+	"XML":
+	[
+		"xml.dist"
+	],
+	"YAML":
+	[
+		".gemrc",
+		"YAML-tmLanguage",
+		"yml",
+		"yml.dist"
+	]
+}

@@ -1,0 +1,9 @@
+[
+  {
+    "keys": ["alt+v"],
+    "command": "tern_select_variable",
+    "context": [
+      {"key": "selector", "operand": "source.js"}
+    ]
+  },
+]

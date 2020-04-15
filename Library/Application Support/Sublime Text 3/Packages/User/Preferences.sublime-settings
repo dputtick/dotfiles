@@ -1,0 +1,105 @@
+{
+	"always_show_minimap_viewport": true,
+	"auto_complete": true,
+	"auto_complete_commit_on_tab": true,
+	"auto_complete_triggers":
+	[
+		{
+			"characters": "<",
+			"selector": "text.html"
+		},
+		{
+			"characters": ".",
+			"selector": "source.js"
+		}
+	],
+	"binary_file_patterns":
+	[
+		"*.dds",
+		"*.eot",
+		"*.gif",
+		"*.ico",
+		"*.jar",
+		"*.jpeg",
+		"*.jpg",
+		"*.pdf",
+		"*.png",
+		"*.swf",
+		"*.tga",
+		"*.ttf",
+		"*.zip"
+	],
+	"color_scheme": "Packages/User/SublimeLinter/Flatland Monokai (SL).tmTheme",
+	"create_window_at_startup": false,
+	"drag_text": false,
+	"fade_fold_buttons": false,
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-workspace"
+	],
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"__pycache__",
+		".cache",
+		"*.egg-info",
+		".tox"
+	],
+	"font_face": "Inconsolata",
+	"font_size": 14,
+	"git_diff_target": "head",
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"ActionScript",
+		"ASP",
+		"C#",
+		"D",
+		"Graphviz",
+		"Groovy",
+		"JavaScript",
+		"Matlab",
+		"Pascal",
+		"PHP",
+		"Python",
+		"R",
+		"Rust",
+		"Scala",
+		"TabNine",
+		"TCL",
+		"TypeScript",
+		"Vintage",
+		"Vintageous"
+	],
+	"rulers":
+	[
+		80
+	],
+	"show_definitions": false,
+	"tab_size": 4,
+	"theme": "SoDaReloaded Dark.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
+}

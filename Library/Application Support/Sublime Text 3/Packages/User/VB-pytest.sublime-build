@@ -1,0 +1,3 @@
+{
+    "shell_cmd": "ssh vbox 'cd /media/sf_vb-shared/PyCIRCLean-Ubuntu && pytest'",
+}
