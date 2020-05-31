@@ -1,0 +1,8 @@
+{
+    "workbench.enableExperiments": false,
+    "update.mode": "manual",
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "files.hotExit": "onExitAndWindowClose",
+    "ruby.useLanguageServer": true,
+    "workbench.startupEditor": "newUntitledFile"
+}
