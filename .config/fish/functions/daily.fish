@@ -1,3 +1,3 @@
 function daily
-    code ~/dev/dailies/(date +%Y%m%d).org
+    edit {$dailies_path}(date +%Y%m%d).org
 end
