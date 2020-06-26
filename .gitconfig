@@ -57,6 +57,9 @@
 	coo = !git fetch && git checkout
 	master = !git checkout master && git pull origin
 
+	# Pushing
+	push-current=!git push -u origin $(git symbolic-ref --short HEAD)
+
 	# Diff
 	ds = diff --stat
 
