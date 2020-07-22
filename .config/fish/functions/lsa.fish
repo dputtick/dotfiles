@@ -1,3 +1,3 @@
 function lsa
-    command ls -GFhAl $argv
+    command ls -AFGhl $argv
 end
