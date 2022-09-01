@@ -20,7 +20,11 @@
 [rerere]
 	enabled = true
 [difftool "vscode"]
-    cmd = code --wait --diff $LOCAL $REMOTE
+    cmd = codium --wait --diff $LOCAL $REMOTE
+[pull]
+	ff = only
+[status]
+	showStash = true
 [alias]
 	# Staging
 	st = status
@@ -90,3 +94,5 @@
 #	fl = log -u
 #	dl = "!git ll -1"
 #	dlf = diff --cached HEAD^
+[pull]
+	ff = only

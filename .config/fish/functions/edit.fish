@@ -1,8 +1,8 @@
 function edit
-    if type -q code
-        command code $argv
-    else if type -q codium
+    if type -q codium
         command codium $argv
+    else if type -q code
+        code $argv
     else if type -q subl
         command subl $argv
     else

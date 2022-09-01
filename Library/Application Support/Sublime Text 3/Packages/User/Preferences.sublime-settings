@@ -68,13 +68,14 @@
 		".tox"
 	],
 	"font_face": "Inconsolata",
-	"font_size": 14,
+	"font_size": 13,
 	"git_diff_target": "head",
 	"highlight_line": true,
 	"ignored_packages":
 	[
 		"ActionScript",
 		"ASP",
+		"Babel",
 		"C#",
 		"D",
 		"Graphviz",
@@ -87,11 +88,15 @@
 		"R",
 		"Rust",
 		"Scala",
+		"SublimeLinter",
 		"TabNine",
 		"TCL",
+		"Terminus",
+		"tern_for_sublime",
 		"TypeScript",
 		"Vintage",
-		"Vintageous"
+		"Vintageous",
+		"Zig Language"
 	],
 	"rulers":
 	[

@@ -52,7 +52,7 @@ node_modules/
 # Solargraph #
 ##############
 .solargraph.yml
-rails-solargraph.rb
+rails_solargraph.rb
 
 # Editors #
 ###########

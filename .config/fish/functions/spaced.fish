@@ -1,9 +1,9 @@
 function spaced -a cmd
     switch $cmd
     case 'study'
-        ruby ~/dev/spaced/spaced.rb
+        ruby ~/dev/spaced/spaced_study.rb
     case 'new'
-        edit ~/dev/spaced/prompts/(date +%s).json
+        ruby ~/dev/spaced/spaced_new.rb
     case '*'
         echo "Please choose 'study' or 'new'"
     end

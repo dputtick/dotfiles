@@ -2,6 +2,8 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"SublimeLinter",
+		"Terminus"
 	],
 	"installed_packages":
 	[
@@ -13,6 +15,7 @@
 		"Fix Mac Path",
 		"GitGutter",
 		"HTML-CSS-JS Prettify",
+		"LSP",
 		"MagicPython",
 		"orgmode",
 		"Package Control",
